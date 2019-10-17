@@ -4,47 +4,12 @@ using UnityEngine;
 
 public class FlacoPlayer : MonoBehaviour{
 
-    /*Rigidbody2D flacoRB;
-    public float maxVelocidad;
 
-    //Voltear flaco
-    bool voltearFlaco = true;
-    SpriteRenderer flacoRender;
-
-    // Start is called before the first frame update
-    void Start(){
-        flacoRB = GetComponent<Rigidbody2D>();
-        flacoRender = GetComponent<SpriteRenderer>();
-    }
-
-    // Update is called once per frame
-    void Update(){
-        //arriba
-        //if(Input.GetKey(KeyCode.UpArrow))
-        //{ transform.position += Vector3.up * maxVelocidad * Time.deltaTime; }
-        //if (Input.GetKey(KeyCode.DownArrow))
-        //{ transform.position += Vector3.down * maxVelocidad * Time.deltaTime; }
-
-        float mover = Input.GetAxis("Horizontal");
-        float mover = Input.GetAxis("Vertical");
-
-        if (mover > 0 && !voltearFlaco){
-            Voltear();
-        }else if(mover < 0 && voltearFlaco){
-            Voltear();
-        }
-
-        flacoRB.velocity = new Vector2(mover * maxVelocidad, flacoRB.velocity.y);
-    }
-
-    void Voltear(){
-        voltearFlaco = !voltearFlaco;
-        flacoRender.flipX = !flacoRender.flipX;
-    }
-    */
     public float speed;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
+
+    Animator flacoAnim;
 
     //Voltear flaco
     bool voltearFlaco = true;
@@ -53,6 +18,7 @@ public class FlacoPlayer : MonoBehaviour{
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
         flacoRender = GetComponent<SpriteRenderer>();
+        flacoAnim = GetComponent<Animator>();
     }
 
     void Update(){
@@ -72,6 +38,9 @@ public class FlacoPlayer : MonoBehaviour{
                 Voltear();
         }
 
+        //hacer que el flaco corra
+        flacoAnim.SetFloat("velMovimiento", Mathf.Abs(mover));
+
     }
 
     void MoveCharacter(){
@@ -84,3 +53,46 @@ public class FlacoPlayer : MonoBehaviour{
     }
 
 }
+
+
+
+
+
+/*Rigidbody2D flacoRB;
+public float maxVelocidad;
+
+//Voltear flaco
+bool voltearFlaco = true;
+SpriteRenderer flacoRender;
+
+// Start is called before the first frame update
+void Start(){
+    flacoRB = GetComponent<Rigidbody2D>();
+    flacoRender = GetComponent<SpriteRenderer>();
+}
+
+// Update is called once per frame
+void Update(){
+    //arriba
+    //if(Input.GetKey(KeyCode.UpArrow))
+    //{ transform.position += Vector3.up * maxVelocidad * Time.deltaTime; }
+    //if (Input.GetKey(KeyCode.DownArrow))
+    //{ transform.position += Vector3.down * maxVelocidad * Time.deltaTime; }
+
+    float mover = Input.GetAxis("Horizontal");
+    float mover = Input.GetAxis("Vertical");
+
+    if (mover > 0 && !voltearFlaco){
+        Voltear();
+    }else if(mover < 0 && voltearFlaco){
+        Voltear();
+    }
+
+    flacoRB.velocity = new Vector2(mover * maxVelocidad, flacoRB.velocity.y);
+}
+
+void Voltear(){
+    voltearFlaco = !voltearFlaco;
+    flacoRender.flipX = !flacoRender.flipX;
+}
+*/
