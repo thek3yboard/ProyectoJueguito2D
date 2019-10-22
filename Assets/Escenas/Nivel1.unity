@@ -129,7 +129,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 113248426}
-  - component: {fileID: 113248425}
   m_Layer: 0
   m_Name: ZombieSet
   m_TagString: Player
@@ -137,25 +136,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &113248425
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113248424}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c2e0db113de81dc41b77cae3f40b3db2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &113248426
 Transform:
   m_ObjectHideFlags: 0
@@ -412,8 +392,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148485386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.59, y: -3.9, z: 0}
-  m_LocalScale: {x: 0.34043583, y: 0.30559784, z: 1}
+  m_LocalPosition: {x: -10.793, y: -5.51, z: 0}
+  m_LocalScale: {x: 0.2709869, y: 0.24906224, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -471,6 +451,7 @@ GameObject:
   - component: {fileID: 584361634}
   - component: {fileID: 584361633}
   - component: {fileID: 584361632}
+  - component: {fileID: 584361636}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Player
@@ -486,8 +467,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584361630}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.36, y: -3.85, z: 21.322184}
-  m_LocalScale: {x: 0.45855618, y: 0.3466543, z: 1}
+  m_LocalPosition: {x: 0.15, y: -5.73, z: 21.322184}
+  m_LocalScale: {x: 0.27181375, y: 0.22710502, z: 1}
   m_Children: []
   m_Father: {fileID: 113248426}
   m_RootOrder: 0
@@ -715,7 +696,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 9365b7c35a4d76847b62d48bb7ffbde7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -727,6 +708,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &584361636
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584361630}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 448e5e865fe00c2458415046cab9bc6c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &853849278 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5352429673610783528, guid: 52ed9fa00c44bc047bb88a908ed1a5b1,
@@ -835,7 +835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912221254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.98, y: -4.66, z: 0}
+  m_LocalPosition: {x: -0.2, y: -6.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 113248426}
@@ -865,7 +865,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365539508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.56, y: -4.69, z: 0}
+  m_LocalPosition: {x: 7.97, y: -6.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 113248426}
@@ -984,12 +984,12 @@ PrefabInstance:
     - target: {fileID: 3418289456344288864, guid: 52ed9fa00c44bc047bb88a908ed1a5b1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: -4.084
       objectReference: {fileID: 0}
     - target: {fileID: 3418289456344288864, guid: 52ed9fa00c44bc047bb88a908ed1a5b1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.01
+      value: -2.55
       objectReference: {fileID: 0}
     - target: {fileID: 3418289456344288864, guid: 52ed9fa00c44bc047bb88a908ed1a5b1,
         type: 3}
@@ -1039,12 +1039,12 @@ PrefabInstance:
     - target: {fileID: 3418289456344288864, guid: 52ed9fa00c44bc047bb88a908ed1a5b1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.1683817
+      value: 3.1929803
       objectReference: {fileID: 0}
     - target: {fileID: 3418289456344288864, guid: 52ed9fa00c44bc047bb88a908ed1a5b1,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.07113
+      value: 3.228406
       objectReference: {fileID: 0}
     - target: {fileID: 694812768757388351, guid: 52ed9fa00c44bc047bb88a908ed1a5b1,
         type: 3}
