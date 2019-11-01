@@ -17,6 +17,8 @@ public class LogicaPersonaje : MonoBehaviour
 
     public float health;
     public float healthOverTime;
+
+    public bool botonPresionado = false;
     
     void Start()
     {
@@ -32,23 +34,23 @@ public class LogicaPersonaje : MonoBehaviour
         Movimiento();
         PresionarBotones();
 
-    	if(Input.GetKey(KeyCode.LeftShift))
+    	if(Input.GetKey(KeyCode.LeftShift) && botonPresionado == true)
         {
             velocidad=5f;
             stamina -= staminaOverTime * Time.deltaTime;
 
             if(stamina <= 0){
                 stamina = 0;
-                velocidad=2f;
+                velocidad = 2f;
                 stamina += staminaOverTime * Time.deltaTime;
             }    
         }
         else
         {
-            velocidad=2f;
+            velocidad = 2f;
             stamina += staminaOverTime * Time.deltaTime;
         }
-
+        botonPresionado = false;
         updateUI();
     }
 
@@ -73,18 +75,22 @@ public class LogicaPersonaje : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             direccion += Vector2.up;
+            botonPresionado = true;
         }
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             direccion += Vector2.down;
+            botonPresionado = true;
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             direccion += Vector2.left;
+            botonPresionado = true;
         }
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             direccion += Vector2.right;
+            botonPresionado = true;
         }
     }
 
@@ -107,6 +113,10 @@ public class LogicaPersonaje : MonoBehaviour
     public void OnCollisionEnter2D (Collision2D col){
         if(col.gameObject.tag.Equals("Enemy")){
             health -= healthOverTime * Time.deltaTime;
+            if(health <= 0)
+            {
+               FindObjectOfType<GameManager>().EndGame();
+            }
         }
 
         updateUI();
@@ -115,6 +125,10 @@ public class LogicaPersonaje : MonoBehaviour
     public void OnCollisionStay2D (Collision2D col){
         if(col.gameObject.tag.Equals("Enemy")){
             health -= healthOverTime * Time.deltaTime;
+            if(health <= 0)
+            {
+                FindObjectOfType<GameManager>().EndGame();
+            }
         }
 
         updateUI();
