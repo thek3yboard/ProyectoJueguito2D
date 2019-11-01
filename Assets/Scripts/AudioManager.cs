@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
  	void Start()
  	{
      	audioSource = gameObject.GetComponent<AudioSource>();
+     	shootClip = shoot[0];
+		cambiarCancion(shootClip);
  	}
 
 	void Update()
@@ -21,14 +23,40 @@ public class AudioManager : MonoBehaviour
 	        int index = Random.Range(0, shoot.Length);
 	        shootClip = shoot[index];
 
-	        while(shootClip != audioSource.clip)
+	        if(shootClip == audioSource.clip && index == 2)
 	        {
-	        	audioSource.clip = shootClip;
-	        	audioSource.Play();
+	        	shootClip = shoot[index-1];
+	        	cambiarCancion(shootClip);
+	        }else if(shootClip == audioSource.clip && index == 0){
+	        	shootClip = shoot[index+1];
+	        	cambiarCancion(shootClip);
+	        }else if(shootClip == audioSource.clip && index == 1){
+	        	shootClip = shoot[index+1];
+	        	cambiarCancion(shootClip);
+	        }else{
+	        	cambiarCancion(shootClip);
 	        }
+
+	        /*
+	        if(shootClip == audioSource.clip)
+	        {
+	        	shootClip = shoot[index+1];
+	        	cambiarCancion(shootClip);
+	        }
+	        else
+	        {
+	        	cambiarCancion(shootClip);
+	        }
+	        */
 	    }
 
 	    if (Input.GetKeyDown(KeyCode.M))
             audioSource.mute = !audioSource.mute;
+	}
+
+	void cambiarCancion(AudioClip shootClip)
+	{
+		audioSource.clip = shootClip;
+	    audioSource.Play();
 	}
 }
