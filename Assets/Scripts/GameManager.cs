@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 	public GameObject gameOverPanel;
     public Text gameOverText;
 
-    public void EndGame()
+    public void EndGameLost()
     {
     	
         if(gameHasEnded == false)
@@ -22,6 +22,18 @@ public class GameManager : MonoBehaviour
         	gameOverPanel.SetActive(true);
         	gameOverText.text = "YOU   LOST";
         	Invoke("Restart", restartDelay);
+        }
+    }
+
+    public void EndGameWon()
+    {
+        
+        if(gameHasEnded == false)
+        {
+            gameHasEnded = true;
+            gameOverPanel.SetActive(true);
+            gameOverText.text = "YOU   WON";
+            Invoke("Restart", restartDelay);
         }
     }
 

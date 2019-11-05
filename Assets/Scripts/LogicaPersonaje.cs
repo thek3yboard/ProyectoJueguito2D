@@ -134,7 +134,7 @@ public class LogicaPersonaje : MonoBehaviour
             health -= healthOverTime * Time.deltaTime;
             if(health <= 0)
             {
-               FindObjectOfType<GameManager>().EndGame();
+               FindObjectOfType<GameManager>().EndGameLost();
             }
         }
 
@@ -146,7 +146,7 @@ public class LogicaPersonaje : MonoBehaviour
             health -= healthOverTime * Time.deltaTime;
             if(health <= 0)
             {
-                FindObjectOfType<GameManager>().EndGame();
+                FindObjectOfType<GameManager>().EndGameLost();
             }
         }
 
