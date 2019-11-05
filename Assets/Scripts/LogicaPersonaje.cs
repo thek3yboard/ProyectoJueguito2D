@@ -19,6 +19,11 @@ public class LogicaPersonaje : MonoBehaviour
     public float healthOverTime;
 
     public bool botonPresionado = false;
+
+      //APUNTAR CON MOUSE
+    public Rigidbody2D rb;
+    public Camera cam;
+    Vector2 mousePos;
     
     void Start()
     {
@@ -52,6 +57,16 @@ public class LogicaPersonaje : MonoBehaviour
         }
         botonPresionado = false;
         updateUI();
+
+        //APUNTAR CON MOUSE
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+    }
+
+    //APUNTAR CON MOUSE
+    void FixedUpdate(){
+        Vector2 lookDir = mousePos - rb.position;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+        rb.rotation = angle;
     }
 
     public void Movimiento()
@@ -77,21 +92,25 @@ public class LogicaPersonaje : MonoBehaviour
             direccion += Vector2.up;
             botonPresionado = true;
         }
+        /*
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             direccion += Vector2.down;
             botonPresionado = true;
         }
+        
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             direccion += Vector2.left;
             botonPresionado = true;
         }
+        
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             direccion += Vector2.right;
             botonPresionado = true;
         }
+        */
     }
 
     public void AnimarMovimiento(Vector2 direccion)
