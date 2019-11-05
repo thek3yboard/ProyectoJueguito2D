@@ -725,5 +725,5 @@ ScriptsOnlyBuild:
   - Assets/Menu/Menu.unity
   - Assets/Escenas/Nivel1.unity
   - Assets/Escenas/GameOver.unity
-  playerPath: C:/Users/juani/Desktop/ProyectoJueguito2D/Builds/Windows/x86/1.0/Wachin
-    In The Apocalypse.exe
+  playerPath: "C:/Users/juani/Desktop/ProyectoJueguito2D/Builds/Windows/x86/1.0 (La
+    m\xFAsica se mantiente, slider no funciona visualmente)/Wachin In The Apocalypse.exe"

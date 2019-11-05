@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class VolumeSlider : MonoBehaviour
 {
@@ -10,6 +11,13 @@ public class VolumeSlider : MonoBehaviour
 
 	public float volumeOverTime;
 	public float previousValue = 0;
+    /*
+    void Awake(){
+        DontDestroyOnLoad(this.gameObject);
+    }
+    */
+
+    
 
 	void Start()
 	{
@@ -42,6 +50,6 @@ public class VolumeSlider : MonoBehaviour
         		volume.value = previousValue;
         		music.mute = !music.mute;
         	}
-        }       
+        }     
     }
 }
