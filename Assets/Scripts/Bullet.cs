@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 	public GameObject hitEffect;
-	public int damage = 20;
+	public int damage;
 
 	//public int life = 10;
 
@@ -45,7 +45,7 @@ public class Bullet : MonoBehaviour
     			
 
                 //FindObjectOfType<enemyHealth>().TakeDamage(20);
-                col.gameObject.GetComponent<enemyHealth>().TakeDamage(5);
+                col.gameObject.GetComponent<enemyHealth>().TakeDamage(damage);
 
                 
          }

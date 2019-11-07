@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - GameManager
     - LogicaPersonaje
     - MenuPrincipal
+    - Pause
     - Shooting2
     - SongManager
     - VolumeSlider
@@ -25,7 +26,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -135,9 +135,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11100}
     - Class: 114
-      Script: {instanceID: 11196}
+      Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11484}
+      Script: {instanceID: 11198}
+    - Class: 114
+      Script: {instanceID: 11486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -198,9 +200,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11100}
     - Class: 114
-      Script: {instanceID: 11258}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11452}
+      Script: {instanceID: 11454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -614,7 +616,13 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: d28846585d44561ae839e807dc500b1d
+      Hash: ffb88a5b69986916e8af2babb9814e00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pause
+  - hash:
+      serializedVersion: 2
+      Hash: 6340bb0e0ce68c8a1f50a9e99cae9e3f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SongManager
@@ -725,5 +733,5 @@ ScriptsOnlyBuild:
   - Assets/Menu/Menu.unity
   - Assets/Escenas/Nivel1.unity
   - Assets/Escenas/GameOver.unity
-  playerPath: "C:/Users/juani/Desktop/ProyectoJueguito2D/Builds/Windows/x86/1.0 (La
-    m\xFAsica se mantiente, slider no funciona visualmente)/Wachin In The Apocalypse.exe"
+  playerPath: C:/Users/juani/Desktop/ProyectoJueguito2D/Builds/Windows/x86/1.1/Wachin
+    In The Apocalypse.exe
