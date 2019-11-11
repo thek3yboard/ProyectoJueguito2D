@@ -26,6 +26,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -102,8 +103,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -172,6 +171,8 @@ ScriptsOnlyBuild:
     - Class: 49
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -292,7 +293,7 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: f59119ad21422ddaf67ac2564b69662d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuPrincipal
@@ -622,7 +623,7 @@ ScriptsOnlyBuild:
     className: Pause
   - hash:
       serializedVersion: 2
-      Hash: 6340bb0e0ce68c8a1f50a9e99cae9e3f
+      Hash: 51bd04c7ab2c8ff105f58da6a7de69ba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SongManager
@@ -733,5 +734,5 @@ ScriptsOnlyBuild:
   - Assets/Menu/Menu.unity
   - Assets/Escenas/Nivel1.unity
   - Assets/Escenas/GameOver.unity
-  playerPath: C:/Users/juani/Desktop/ProyectoJueguito2D/Builds/Windows/x86/1.1/Wachin
+  playerPath: C:/Users/juani/Desktop/ProyectoJueguito2D/Builds/Windows/x86/1.2/Wachin
     In The Apocalypse.exe

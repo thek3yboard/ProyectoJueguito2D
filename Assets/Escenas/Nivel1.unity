@@ -1472,7 +1472,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -9.160718, y: 2.640181}
+  m_Offset: {x: -9.152128, y: 2.6401806}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1483,7 +1483,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5155392, y: 2.6366425}
+  m_Size: {x: 1.3952866, y: 2.571575}
   m_EdgeRadius: 0
 --- !u!61 &853849295
 BoxCollider2D:
@@ -1498,7 +1498,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -9.169416, y: -2.6634562}
+  m_Offset: {x: -9.136739, y: -2.6772084}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1509,7 +1509,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5057526, y: 2.636541}
+  m_Size: {x: 1.4403973, y: 2.5815322}
   m_EdgeRadius: 0
 --- !u!61 &853849296
 BoxCollider2D:
@@ -1524,7 +1524,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -10.66107, y: 4.1102734}
+  m_Offset: {x: -10.68383, y: 4.1102734}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1535,7 +1535,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37763596, y: 2.104826}
+  m_Size: {x: 0.33211613, y: 2.104826}
   m_EdgeRadius: 0
 --- !u!68 &853849297
 EdgeCollider2D:
@@ -1703,7 +1703,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 8.881395, y: -7.986813}
+  m_Offset: {x: 8.859854, y: -7.9474835}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1714,7 +1714,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6397371, y: 1.5557852}
+  m_Size: {x: 2.4941387, y: 1.3672075}
   m_EdgeRadius: 0
 --- !u!61 &853849304
 BoxCollider2D:
@@ -1729,7 +1729,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 10.74005, y: -4.1045084}
+  m_Offset: {x: 10.800147, y: -4.1045084}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1740,7 +1740,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6086674, y: 2.0496707}
+  m_Size: {x: 0.4884739, y: 2.0496712}
   m_EdgeRadius: 0
 --- !u!61 &853849305
 BoxCollider2D:
@@ -1755,7 +1755,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.009678, y: -5.778533}
+  m_Offset: {x: 9.009678, y: -5.829116}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1766,7 +1766,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0557957, y: 1.0402908}
+  m_Size: {x: 2.0557957, y: 0.93912554}
   m_EdgeRadius: 0
 --- !u!61 &853849306
 BoxCollider2D:
@@ -1781,7 +1781,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 10.709785, y: 4.0913286}
+  m_Offset: {x: 10.739547, y: 4.0913286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1792,7 +1792,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.52827454, y: 2.042883}
+  m_Size: {x: 0.4687519, y: 2.042883}
   m_EdgeRadius: 0
 --- !u!61 &853849307
 BoxCollider2D:
@@ -1833,7 +1833,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 8.999154, y: 0.87820196}
+  m_Offset: {x: 9.009245, y: 0.87820196}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1844,7 +1844,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6542778, y: 1.6178522}
+  m_Size: {x: 2.4967585, y: 1.6178522}
   m_EdgeRadius: 0
 --- !u!61 &853849309
 BoxCollider2D:
@@ -1911,7 +1911,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -10.677794, y: -4.1045017}
+  m_Offset: {x: -10.70991, y: -4.1045017}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1922,7 +1922,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.45072365, y: 2.0809288}
+  m_Size: {x: 0.38649178, y: 2.0809288}
   m_EdgeRadius: 0
 --- !u!61 &853849312
 BoxCollider2D:
@@ -2776,10 +2776,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 71c9159f275dd3341b8db00244359c99, type: 3}
   - {fileID: 8300000, guid: 0663e1d144b79f948ba3231516b05628, type: 3}
   - {fileID: 8300000, guid: de007c0007069c74a8e4b0da30e69407, type: 3}
+  songName:
+  - Hotline
+  - Miami 2
+  - Perturbator
+  - A New Morning
+  - Electric Dreams
+  actualSongName: 
   pausedSong: 0
+  index: 0
   mostrarCancionPanel: {fileID: 1475441132}
   mostrarCancionText: {fileID: 2086831204}
-  VolumeCanvas: {fileID: 1981066456}
+  KeepCanvas: {fileID: 1981066456}
 --- !u!1 &1066350109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,7 +3756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1570495106}
   m_Layer: 0
-  m_Name: VolumeSliderObject
+  m_Name: KeepObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3801,7 +3809,7 @@ RectTransform:
   - {fileID: 39085365}
   - {fileID: 50891931}
   m_Father: {fileID: 1981066460}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4155,37 +4163,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 0}
---- !u!1 &1785678804
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1785678805}
-  m_Layer: 0
-  m_Name: NombreCancion
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1785678805
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785678804}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.918034, y: 0.98023045, z: -640.57623}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2116980731}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1861302861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4444,7 +4421,7 @@ GameObject:
   - component: {fileID: 1981066458}
   - component: {fileID: 1981066457}
   m_Layer: 5
-  m_Name: VolumeCanvas
+  m_Name: KeepCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4521,6 +4498,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 2116980731}
   - {fileID: 1585791436}
   m_Father: {fileID: 1570495106}
   m_RootOrder: 0
@@ -4710,7 +4688,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 301.2, y: -111}
+  m_AnchoredPosition: {x: 65, y: -108}
   m_SizeDelta: {x: 801.1, y: 270.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2086831204
@@ -4734,7 +4712,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4d13bdb6b5cd18b4ebd558140741f74d, type: 3}
     m_FontSize: 30
-    m_FontStyle: 2
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 70
@@ -4855,7 +4833,7 @@ GameObject:
   - component: {fileID: 2116980733}
   - component: {fileID: 2116980732}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: SongNameCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4868,19 +4846,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116980730}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.78124994, y: 0.78124994, z: 0.78124994}
   m_Children:
   - {fileID: 1475441133}
-  m_Father: {fileID: 1785678805}
+  m_Father: {fileID: 1981066460}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 399.9999, y: 299.99997}
+  m_SizeDelta: {x: 1024, y: 768}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2116980732
 MonoBehaviour:
   m_ObjectHideFlags: 0
