@@ -7,7 +7,8 @@ public class LogicaPersonaje : MonoBehaviour
 {
     public float velocidad = 2f;
     public Vector2 direccion;
-    private Animator animator;
+    private Animator anim;
+    //public bool isDead = false;
 
     public Slider staminaBar;
     public Slider healthBar;
@@ -27,7 +28,7 @@ public class LogicaPersonaje : MonoBehaviour
     
     void Start()
     {
-        animator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
         staminaBar.maxValue = stamina;
         healthBar.maxValue = health;
@@ -36,6 +37,11 @@ public class LogicaPersonaje : MonoBehaviour
     
     void Update()
     {
+        if(health == 0){
+            FindObjectOfType<Shooting2>().DoNothing();
+            return;
+        }
+
         Movimiento();
         PresionarBotones();
 
@@ -63,7 +69,15 @@ public class LogicaPersonaje : MonoBehaviour
     }
 
     //APUNTAR CON MOUSE
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
+        if(health == 0){
+            FindObjectOfType<Shooting2>().DoNothing();
+            return;
+        }
+            
+
+
         Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
@@ -79,7 +93,7 @@ public class LogicaPersonaje : MonoBehaviour
         }
         else
         {
-            animator.SetLayerWeight(1, 0);
+            anim.SetLayerWeight(1, 0);
         }
         
     }
@@ -91,6 +105,11 @@ public class LogicaPersonaje : MonoBehaviour
         {
             direccion += Vector2.up;
             botonPresionado = true;
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
         }
         /*
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
@@ -115,9 +134,9 @@ public class LogicaPersonaje : MonoBehaviour
 
     public void AnimarMovimiento(Vector2 direccion)
     {
-        animator.SetLayerWeight(1, 1);
-        animator.SetFloat("x", direccion.x);
-        animator.SetFloat("y", direccion.y);
+        anim.SetLayerWeight(1, 1);
+        anim.SetFloat("x", direccion.x);
+        anim.SetFloat("y", direccion.y);
     }
 
     private void updateUI()
@@ -134,7 +153,10 @@ public class LogicaPersonaje : MonoBehaviour
             health -= healthOverTime * Time.deltaTime;
             if(health <= 0)
             {
-               FindObjectOfType<GameManager>().EndGameLost();
+                anim.SetBool("IsDead", true);
+                Destroy(gameObject,3f);
+
+                FindObjectOfType<GameManager>().EndGameLost();
             }
         }
 
@@ -146,6 +168,9 @@ public class LogicaPersonaje : MonoBehaviour
             health -= healthOverTime * Time.deltaTime;
             if(health <= 0)
             {
+                anim.SetBool("IsDead", true);
+                Destroy(gameObject,3f);
+
                 FindObjectOfType<GameManager>().EndGameLost();
             }
         }

@@ -28,7 +28,8 @@ public class Enemigo : MonoBehaviour
     }
 
     void moveCharacter(Vector2 direction){
-    	rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+        //if(player.health != 0)
+    	   rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
 
 

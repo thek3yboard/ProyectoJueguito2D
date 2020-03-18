@@ -21,8 +21,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -734,5 +737,5 @@ ScriptsOnlyBuild:
   - Assets/Menu/Menu.unity
   - Assets/Escenas/Nivel1.unity
   - Assets/Escenas/GameOver.unity
-  playerPath: C:/Users/juani/Desktop/ProyectoJueguito2D/Builds/Windows/x86/1.2/Wachin
+  playerPath: C:/Users/juani/Desktop/ProyectoJueguito2D/Builds/Windows/x86/1.4/Wachin
     In The Apocalypse.exe
